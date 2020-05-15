@@ -14,7 +14,7 @@ RUN ln -fs /usr/share/zoneinfo/Asia/Taipei /etc/localtime \
 RUN DEBIAN_FRONTEND=noninteractive apt-get -qqy install git-core build-essential \
   bc gnupg flex bison gperf zip curl zlib1g-dev gcc-multilib g++-multilib \
   libc6-dev-i386 lib32ncurses5-dev x11proto-core-dev libx11-dev lib32z-dev \
-  ccache libgl1-mesa-dev libxml2-utils xsltproc unzip \
+  ccache libgl1-mesa-dev libxml2-utils xsltproc unzip cmake \
   && apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # download GNU toolchain for the Cortex-A family
